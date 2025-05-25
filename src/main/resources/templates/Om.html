@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isabelle Psykoterapi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    /* Additional styling to ensure the font works */
+    .font-medieval {
+      font-family: 'MedievalSharp', cursive;
+    }
+    .font-cinzel {
+      font-family: 'Cinzel', serif;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: ['class'],
+      theme: {
+        extend: {
+          colors: {
+            // Custom gray shades
+            gray: {
+              800: "#2F2F2F",
+            },
+            purple: {
+              600: '#8B5CF6',
+            },
+            blue: {
+              250: "#2E4A62",
+              275: "#4C6681",
+            },
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-blue-275 min-h-screen flex flex-col">
+
+<nav class="fixed top-0 left-0 w-full bg-blue-250 text-white p-4 shadow z-50">
+  <div class="relative container mx-auto flex items-center justify-between">
+
+    <!-- Left: Logo -->
+    <div class="text-3xl font-bold">Isabelle Psykoterapi</div>
+
+    <!-- Right: Login -->
+    <div class="flex space-x-6 text-m">
+      <a href="/" class="hover:text-gray-200">Hjem</a>
+      <a href="/kontakt" class="hover:text-gray-200">Kontakt</a>
+      <a href="/metoder" class="hover:text-gray-200">Metoder</a>
+      <a href="/om" class="hover:text-gray-200">Om</a>
+      <a class="hover:text-gray-200">Blog</a>
+    </div>
+
+  </div>
+</nav>
+
+<main class="pt-20 mb-4 container mx-auto px-4 py-8 grid grid-cols-1 gap-6 bg-blue-275 w-auto w-full min-h-screen">
+  <div class="container pb-2">
+    <div class="mb-4 bg-white shadow-md rounded-lg p-6 border border-solid border-gray-700">
+      <!-- Two-column layout: text on left, image on right -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+        <!-- Left column: Text content -->
+        <div>
+          <div class="px-4 py-6 leading-relaxed text-gray-800 font-sans whitespace-pre-line">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800">Om mig</h2>
+            <p>
+              Psykoterapeut og mindfulnessinstruktør Isabelle Guillois Lærkes - Uddannet psykoterapeut fra ID-academy, som er godkendt af Dansk psykoterapeutforening.
+              Supplerende uddannelse i Kognitiv terapi, Løsningsfokuserede samtaler, motiverende samtaler, Åben dialog, og stemmehørergruppefacilitator.
+
+              Jeg har mit arbejdsliv haft interesse for den psykologiske del af vores sundhed, og hvordan følelser og tanker spiller ind på den måde, mennesker varetager deres sundhed.
+              Jeg har arbejdet med mennesker med at hjælpe, støtte, guide mennesker psykiske sygdomme i 20 år.
+              Jeg har arbejdet med unge, der er vokset op i med misbrugende forældre og med mennesker, der ligesom så mange andre, har brug for midlertidig terapi til at bryde nogle uhensigtsmæssige mønstre eller komme sig over en krise.
+              Jeg har et meget bredt billede af, hvad vi mennesker kan opleve af barrierer for at opretholde livet på bedste vis.
+              Når mennesker er forskellige og livets udfordringer er forskellige, passer én terapiform ikke til alle, og derfor anvender jeg flere tilgange og metoder i terapien.
+              Jeg har arbejdet med terapi i grupper og individuelt.
+              En meget forenklet opsummering af omdrejningspunktet for mit arbejde, har været selv-til-selv relationen. Altså, hvordan er forholdet til én selv. I mine øjne den vigtigste relation, især fordi den har så stor betydning for, hvordan vi relaterer til andre, til livet og til verden og er den væsentligste faktor for personlig trivsel. Hvis du kan holde af dig selv, opleve dig ligeværdig i de fleste sammenhænge, acceptere og rumme din fejlbarlighed, er sandsynligheden for mistrivsel, stress og psykisk sygdom stærkt reduceret. Mange psykiske lidelser er en følge af en et manglende eller lavt selvværd.
+              Jeg er født i 1973, og har livserfaring med familie, børn, ægteskab og kriser.
+              Jeg er optaget af at lære noget af mine livsbegivenheder, og alle de mennesker jeg møder.
+              Jeg er optaget af, hvad der giver mening for mennesker, og hvad vi hver især gør, for at være i verden, på en måde, vi kan trives med.
+            </p>
+          </div>
+
+          <!-- Contact button inside left column -->
+          <div class="mt-6">
+            <button id="openModalBtn" class="bg-blue-600 text-white px-4 py-3 border-none rounded-lg text-lg cursor-pointer transition duration-300 hover:bg-blue-200">
+              Kontakt
+            </button>
+          </div>
+        </div>
+
+        <!-- Right column: Image -->
+        <div class="flex justify-center md:justify-end">
+          <img src="isabelle1.jpg" alt="Isabelle Psykoterapi" class="rounded-lg shadow-lg max-w-full h-auto object-cover">
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Single modal at document level -->
+<div id="kontaktModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+  <div class="bg-white rounded-lg shadow-lg p-6 w-11/12 max-w-md relative">
+    <button id="closeModalBtn" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-xl font-bold">&times;</button>
+    <div class="text-gray-800 space-y-2 text-sm leading-relaxed">
+      <p>
+        <strong>Kontakt:</strong><br>
+        Isabelle Guillois Lærkes<br>
+        Sølvgade 14<br>
+        1307 København K<br>
+        Tlf: +45 33 16 19 19<br>
+        Email: <a href="mailto:isagulae@gmail.dk" class="text-blue-600 underline">isagulae@gmail.dk</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-blue-250 text-white py-6 mt-auto border border-solid border-blue-250">
+  <div class="container mx-auto text-center">
+    <p>&copy; 2025 Isabelle Psykoterapi.</p>
+  </div>
+</footer>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const modal = document.getElementById('kontaktModal');
+    const openBtn = document.getElementById('openModalBtn');
+    const closeBtn = document.getElementById('closeModalBtn');
+
+    if (openBtn && modal && closeBtn) {
+      openBtn.addEventListener('click', (e) => {
+        console.log('Button clicked!');
+        e.preventDefault();
+
+        // Force show the modal with inline styles
+        modal.style.display = 'flex';
+        modal.classList.remove('hidden');
+
+        console.log('Modal classes after click:', modal.className);
+        console.log('Modal display style:', modal.style.display);
+      });
+
+      closeBtn.addEventListener('click', (e) => {
+        console.log('Close button clicked!');
+        e.preventDefault();
+
+        // Force hide the modal
+        modal.style.display = 'none';
+        modal.classList.add('hidden');
+      });
+
+      // Close modal on click outside
+      modal.addEventListener('click', function (e) {
+        if (e.target === modal) {
+          modal.style.display = 'none';
+          modal.classList.add('hidden');
+        }
+      });
+    }
+  });
+</script>
+
+</body>
+</html>

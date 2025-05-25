@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isabelle Psykoterapi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        /* Additional styling to ensure the font works */
+        .font-medieval {
+            font-family: 'MedievalSharp', cursive;
+        }
+        .font-cinzel {
+            font-family: 'Cinzel', serif;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: ['class'],
+            theme: {
+                extend: {
+                    colors: {
+                        // Custom gray shades
+                        gray: {
+                            800: "#2F2F2F",
+                        },
+                        purple: {
+                            600: '#8B5CF6',
+                        },
+                        blue: {
+                            250: "#2E4A62",
+                            275: "#4C6681",
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-blue-275 min-h-screen flex flex-col">
+
+<nav class="fixed top-0 left-0 w-full bg-blue-250 text-white p-4 shadow z-50">
+    <div class="relative container mx-auto flex items-center justify-between">
+
+        <!-- Left: Logo -->
+        <div class="text-3xl font-bold">Isabelle Psykoterapi</div>
+
+        <!-- Right: Login -->
+        <div class="flex space-x-6 text-m">
+            <a href="/" class="hover:text-gray-200">Hjem</a>
+            <a href="/kontakt" class="hover:text-gray-200">Kontakt</a>
+            <a href="/metoder" class="hover:text-gray-200">Metoder</a>
+            <a href="/om" class="hover:text-gray-200">Om</a>
+            <a class="hover:text-gray-200">Blog</a>
+        </div>
+
+    </div>
+</nav>
+
+<main class="pt-20 mb-4 container mx-auto px-4 py-8 grid grid-cols-1 gap-6 bg-blue-275 w-auto w-full min-h-screen">
+    <div class="container pb-2">
+        <div class="mb-4 bg-white shadow-md rounded-lg p-6 border border-solid border-gray-700">
+            <!-- Two-column layout: text on left, image on right -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                <!-- Left column: Text content -->
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 text-gray-800">Metoder</h2>
+                    <div class="text-gray-800 mb-6 space-y-4">
+                        <section class="max-w-3xl mx-auto px-4 py-8 text-gray-800 font-sans">
+                            <p class="mb-4 leading-relaxed">
+                                Al terapi består først og fremmest af en god relation og samarbejdsalliance mellem klient og terapeut.
+                                Når du som klient føler dig set, hørt og accepteret og ikke frygter at blive dømt – kort sagt, har tillid til terapeuten – vil udgangspunktet for en positiv forandring være til stede.
+                                Så det vigtigste er dette møde mellem to mennesker.
+                            </p>
+
+                            <p class="mb-6 leading-relaxed">
+                                Derefter kommer valget af metode. Jeg er uddannet bredt metodisk, men har nogle præferencer.
+                                Disse præferencer har jeg, fordi de giver klienten konkrete værktøjer, som kan bruges – også uden for terapilokalet.
+                            </p>
+
+                            <details class="mb-4 border border-gray-200 rounded-lg bg-gray-50 overflow-hidden">
+                                <summary class="cursor-pointer px-4 py-3 font-semibold bg-blue-100 hover:bg-blue-200 transition-colors">
+                                    Kognitiv Adfærdsterapi
+                                </summary>
+                                <div class="px-4 py-3 space-y-4">
+                                    <p>
+                                        <strong>Kognitiv adfærdsterapi (KAT)</strong> fokuserer på at ændre uhensigtsmæssige tankemønstre for at forbedre mental sundhed.
+                                        Den betoner, at tanker, følelser, kropsfornemmelser og adfærd er indbyrdes forbundne, og at negative tanker kan føre til negative følelser og adfærd.
+                                    </p>
+                                    <p>
+                                        Gennem forskellige teknikker – såsom udfordring og omstrukturering af automatiske negative tanker samt eksponeringsterapi – hjælper KAT klienter med at:
+                                    </p>
+                                    <ul class="list-disc pl-5 space-y-1">
+                                        <li>Identificere og ændre obstruerende leveregler</li>
+                                        <li>Udvikle mere realistiske tankemønstre og leveregler</li>
+                                        <li>Håndtere vanskelige følelser og adfærdsmønstre</li>
+                                    </ul>
+                                    <p>
+                                        KAT lægger vægt på klientens aktive deltagelse i terapien og <em>empowerment</em> til at håndtere deres mentale sundhed på egen hånd.
+                                    </p>
+                                </div>
+                            </details>
+
+                            <details class="mb-4 border border-gray-200 rounded-lg bg-gray-50 overflow-hidden">
+                                <summary class="cursor-pointer px-4 py-3 font-semibold bg-blue-100 hover:bg-blue-200 transition-colors">
+                                    Mindfulness og Compassionfokuseret terapi
+                                </summary>
+                                <div class="px-4 py-3 space-y-4">
+                                    <p>
+                                        <strong>Mindfulness og Compassionfokuseret terapi</strong> bunder i buddhistisk filosofi og meditationspraksisser, men kan praktiseres uafhængigt af en religiøs tro.
+                                        Den grundlæggende idé er at træne sindet til at være mere til stede i nuet, mere accepterende af tanker og følelser, og mere venlig og medfølende over for sig selv og andre.
+                                    </p>
+                                    <p>
+                                        Når jeg beskriver dem sammen er det fordi, de er 2 sider af samme sag. Du kan ikke udøve compassion overfor dig selv uden også at være mindful om dig selv, og du kan ikke udøve mindfulness uden samtidig at træne accept og venlighed overfor dig selv.
+                                    </p>
+                                    <p><strong>Mindfulness</strong> har en række positive effekter på hjernen:</p>
+                                    <ul class="list-disc pl-5 space-y-1">
+                                        <li><strong>Reducerer stress og angst:</strong> Mindfulness kan hjælpe med at håndtere stressende tanker og følelser og reducere symptomer på angst og depression.</li>
+                                        <li><strong>Forbedrer koncentration og indlæring:</strong> Mindfulness kan øge evnen til at fokusere og koncentrere sig i nuet, hvilket kan forbedre indlæring og hukommelse.</li>
+                                        <li><strong>Øger selvindsigt og selvmedfølelse:</strong> Mindfulness kan hjælpe med at blive mere bevidst om tanker og følelser og udvikle en mere accepterende og venlig attitude over for sig selv.</li>
+                                    </ul>
+                                    <p><strong>Compassionfokuseret terapi (CFT)</strong> fremmer medfølelse for sig selv og andre. Den hjælper bl.a. klienter med at:</p>
+                                    <ul class="list-disc pl-5 space-y-1">
+                                        <li><strong>Udvikle medfølelse for sig selv</strong></li>
+                                        <li><strong>Udvikle medfølelse for andre</strong></li>
+                                        <li><strong>Håndtere vanskelige følelser</strong></li>
+                                        <li><strong>Handle sundt og i tråd med sin kerne</strong></li>
+                                    </ul>
+                                    <p>
+                                        CFT er effektiv til at behandle selvkritik, skam og forskellige psykiske lidelser, herunder angst og depression.
+                                    </p>
+                                </div>
+                            </details>
+
+                            <details class="mb-4 border border-gray-200 rounded-lg bg-gray-50 overflow-hidden">
+                                <summary class="cursor-pointer px-4 py-3 font-semibold bg-blue-100 hover:bg-blue-200 transition-colors">
+                                    Stolearbejde
+                                </summary>
+                                <div class="px-4 py-3 space-y-4">
+                                    <p><strong>Stolearbejde</strong> bruges til at udforske indre konflikter og bearbejde traumer og blokeringer gennem dialog med dele af selvet.</p>
+                                    <ul class="list-disc pl-5 space-y-1">
+                                        <li><strong>Øget bevidsthed:</strong> Gør ubevidste mønstre synlige og mulige at arbejde med.</li>
+                                        <li><strong>Integration af delpersonligheder:</strong> Øger selvaccept og indre ro.</li>
+                                        <li><strong>Styrkelse af identitet:</strong> Hjælper med at afklare værdier og livsretning.</li>
+                                        <li><strong>Forbedret selvbillede:</strong> Styrker selvtillid og selvværd.</li>
+                                    </ul>
+                                </div>
+                            </details>
+
+                            <details class="mb-4 border border-gray-200 rounded-lg bg-gray-50 overflow-hidden">
+                                <summary class="cursor-pointer px-4 py-3 font-semibold bg-blue-100 hover:bg-blue-200 transition-colors">
+                                    Stemmehørerterapi
+                                </summary>
+                                <div class="px-4 py-3 space-y-4">
+                                    <p>
+                                        <strong>Stemmehørerterapi</strong> er for mennesker, der hører stemmer, ser syner eller har taktile hallucinationer.
+                                        Terapien fokuserer på at forstå og arbejde med stemmerne frem for blot at dæmpe dem.
+                                    </p>
+                                    <p>
+                                        Mange oplever, at stemmerne repræsenterer følelser eller tidligere traumer og har en ubevidst funktion.
+                                        Gennem dialog, kortlægning og anerkendte metoder skabes en relation til stemmerne med nysgerrighed og accept.
+                                    </p>
+                                    <p>
+                                        Det er også muligt at arbejde med stemmedialog, hvor terapeuten taler direkte med stemmen via klienten.
+                                    </p>
+                                </div>
+                            </details>
+                        </section>
+                    </div>
+                    <div class="mt-6">
+                        <button id="openModalBtn" class="bg-blue-600 text-white px-4 py-3 border-none rounded-lg text-lg cursor-pointer transition duration-300 hover:bg-blue-200">
+                            Kontakt
+                        </button>
+                    </div>
+                </div>
+
+
+
+                <!-- Right column: Image - MOVED HERE -->
+                <div class="flex justify-center md:justify-end">
+                    <img src="isabelle1.jpg" alt="Isabelle Psykoterapi" class="rounded-lg shadow-lg max-w-full h-auto object-cover">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div id="kontaktModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+    <div class="bg-white rounded-lg shadow-lg p-6 w-11/12 max-w-md relative">
+        <button id="closeModalBtn" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-xl font-bold">&times;</button>
+        <div class="text-gray-800 space-y-2 text-sm leading-relaxed">
+            <p>
+                <strong>Kontakt:</strong><br>
+                Isabelle Guillois Lærkes<br>
+                Sølvgade 14<br>
+                1307 København K<br>
+                Tlf: +45 33 16 19 19<br>
+                Email: <a href="mailto:isagulae@gmail.dk" class="text-blue-600 underline">isagulae@gmail.dk</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-blue-250 text-white py-6 mt-auto border border-solid border-blue-250">
+    <div class="container mx-auto text-center">
+        <p>&copy; 2025 Isabelle Psykoterapi.</p>
+    </div>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const modal = document.getElementById('kontaktModal');
+        const openBtn = document.getElementById('openModalBtn');
+        const closeBtn = document.getElementById('closeModalBtn');
+
+        if (openBtn && modal && closeBtn) {
+            openBtn.addEventListener('click', (e) => {
+                console.log('Button clicked!');
+                e.preventDefault();
+
+                // Force show the modal with inline styles
+                modal.style.display = 'flex';
+                modal.classList.remove('hidden');
+
+                console.log('Modal classes after click:', modal.className);
+                console.log('Modal display style:', modal.style.display);
+            });
+
+            closeBtn.addEventListener('click', (e) => {
+                console.log('Close button clicked!');
+                e.preventDefault();
+
+                // Force hide the modal
+                modal.style.display = 'none';
+                modal.classList.add('hidden');
+            });
+
+            // Close modal on click outside
+            modal.addEventListener('click', function (e) {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                    modal.classList.add('hidden');
+                }
+            });
+        }
+    });
+</script>
+
+</body>
+</html>
